@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7964a6dd-25ba-4771-9c64-3b2c29a503f9" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Math/圆的碰撞.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithm/A-star寻路.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="js.iws" />
@@ -26,21 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="三维运动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Math/三维运动.html">
+      <file leaf-file-name="A-star寻路.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithm/A-star寻路.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="圆的碰撞.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Math/圆的碰撞.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+            <state relative-caret-position="338">
+              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -67,6 +57,7 @@
         <option value="$PROJECT_DIR$/Math/三维运动.html" />
         <option value="$PROJECT_DIR$/Math/跟随鼠标转动的眼睛.html" />
         <option value="$PROJECT_DIR$/Math/圆的碰撞.html" />
+        <option value="$PROJECT_DIR$/algorithm/A-star寻路.html" />
       </list>
     </option>
   </component>
@@ -130,10 +121,6 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -145,11 +132,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="algorithm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -171,10 +154,7 @@
       <recent name="$PROJECT_DIR$/Math/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.圆的碰撞.html">
-    <configuration default="false" name="js.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="js.js" working-dir="$PROJECT_DIR$/math">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.A-star寻路.html">
     <configuration default="false" name="圆周运动.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js/Math/圆周运动.html">
       <method />
     </configuration>
@@ -185,6 +165,9 @@
       <method />
     </configuration>
     <configuration default="false" name="圆的碰撞.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js/Math/圆的碰撞.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="A-star寻路.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js/algorithm/A-star寻路.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -235,19 +218,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.js.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.圆周运动.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.三维运动.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.跟随鼠标转动的眼睛.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.圆的碰撞.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.圆周运动.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.三维运动.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.跟随鼠标转动的眼睛.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.圆的碰撞.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.A-star寻路.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.圆的碰撞.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.跟随鼠标转动的眼睛.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.三维运动.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.圆周运动.html" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.js.js" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.A-star寻路.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.圆的碰撞.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.跟随鼠标转动的眼睛.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.三维运动.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.圆周运动.html" />
       </list>
     </recent_temporary>
   </component>
@@ -264,15 +247,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510554489325</updated>
-      <workItem from="1510554490578" duration="9712000" />
+      <workItem from="1510554490578" duration="17071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9712000" />
+    <option name="totallyTimeSpent" value="17071000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="733" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="733" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16679905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -356,6 +339,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Math/圆的碰撞.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Math/三维运动.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -364,10 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Math/圆的碰撞.html">
+    <entry file="file://$PROJECT_DIR$/algorithm/A-star寻路.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        <state relative-caret-position="338">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding />
         </state>
       </provider>
