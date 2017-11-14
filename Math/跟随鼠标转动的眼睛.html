@@ -40,7 +40,6 @@
                         changeX = Math.sin(Math.atan(b/a)) * r;
                         changeY = Math.cos(Math.atan(b/a)) * -r;
 
-
                     }else if(x > obj.offsetLeft + obj.parentNode.offsetLeft && y > obj.offsetTop + obj.parentNode.offsetTop){
                         //右下
                         changeX = Math.sin(Math.atan(b/a)) * r;
@@ -50,10 +49,12 @@
                         //左下
                         changeX = Math.sin(Math.atan(b/a)) * -r;
                         changeY = Math.cos(Math.atan(b/a)) * r;
+
                     }else if(x < obj.offsetLeft + obj.parentNode.offsetLeft && y < obj.offsetTop + obj.parentNode.offsetTop){
                         //左上
                         changeX = Math.sin(Math.atan(b/a)) * -r;
                         changeY = Math.cos(Math.atan(b/a)) * -r;
+
                     }
 
                     obj.style.left = l +changeX + 'px';
