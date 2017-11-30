@@ -22,7 +22,9 @@
             v-on:keyup.enter="addTodo"
         />
         <ul class="task-count" v-show="list.length">
-            <li>2个任务未完成</li>
+            <li>
+                {{ noCheckedLength }}个任务未完成
+            </li>
             <li class="action">
                 <a class="active" href="#all">所有任务</a>
                 <a href="#unfinished">未完成的任务</a>
@@ -33,19 +35,38 @@
         <div class="tasks">
             <span class="no-task-tip" v-show="!list.length">还没有添加任何任务</span>
             <ul class="todo-list">
-                <li class="todo" v-bind:class="{completed:item.isChecked}" v-for="item in list">
+                <li class="todo" v-bind:class="{completed:item.isChecked,editing:item===edtorTodos}" v-for="item in filteredList">
                     <div class="view">
                         <input type="checkbox" class="toggle" v-model="item.isChecked"/>
-                        <label>{{ item.title }}</label>
+                        <label @dblclick="edtorTodo(item)">{{ item.title }}</label>
                         <button class="destroy" @click="deleteTodo(item)"></button>
                     </div>
-                    <input type="text" class="edit">
+                    <input
+                        @keyup.esc="cancelTodo(item)"
+                        @keyup.13="edtorTodoed(item)"
+                        @blur="edtorTodoed(item)"
+                        v-focus="edtorTodos===item"
+                        type="text"
+                        class="edit"
+                        v-model="item.title">
                 </li>
             </ul>
         </div>
     </div>
     <script>
-        var list = [
+        //存取localStorage中的数据
+        var store = {
+            save(key,value){
+                localStorage.setItem(key, JSON.stringify(value));
+            },
+            fetch(key){
+                return JSON.parse(localStorage.getItem(key)) || [];
+            }
+        }
+
+        var list = store.fetch("cheng_class");
+
+        /*var list = [
             {
                 title:"吃饭打豆豆1",
                 isChecked:false
@@ -54,13 +75,55 @@
                 title:"吃饭打豆豆2",
                 isChecked:true //选中
             }
-        ];
+        ];*/
 
-        new Vue({
+        //三种情况：all,finished,unfinished
+        var filter = {
+            all:function(){
+                return list;
+            },
+            finished:function(){
+                return list.filter(function(item){
+                    return item.isChecked;
+                })
+            },
+            unfinished:function(){
+                return list.filter(function(item){
+                    return !item.isChecked;
+                })
+            }
+        }
+
+
+        var vm = new Vue({
             el:".main",
             data:{
                 list:list,
-                todo:""
+                todo:'',
+                edtorTodos:'',//记录正在编辑的数据
+                beforeTitle:'',//记录正在编辑数据的title
+                visibility:'all'//通过属性值变化筛选数据
+            },
+            watch:{//监控数据
+                /*list:function(){
+                    store.save("cheng_class",this.list)
+                }*/
+                list:{
+                    handler:function(){
+                        store.save("cheng_class",this.list);
+                    },
+                    deep:true //深度监控
+                }
+            },
+            computed:{//计算属性
+                noCheckedLength:function(){//计算选中项
+                    return this.list.filter(function(item){
+                        return !item.isChecked;
+                    }).length
+                },
+                filteredList:function(){//过滤后的数据
+                    return filter[this.visibility] ? filter[this.visibility](list) : list;
+                }
             },
             methods:{
                 addTodo(ev){//添加任务
@@ -73,9 +136,40 @@
                 deleteTodo(todo){//删除任务
                     var index = this.list.indexOf(todo);
                     this.list.splice(index,1);
+                },
+                edtorTodo(todo){//编辑任务
+                    this.beforeTitle = todo.title;//记录编辑之前的title,用于取消编辑
+                    this.edtorTodos = todo;
+                },
+                edtorTodoed(todo){//编辑完成
+                    this.edtorTodos = '';
+                },
+                cancelTodo(todo){//取消编辑
+                    todo.title = this.beforeTitle;
+                    this.edtorTodos = '';
+                }
+            },
+            directives:{
+                "focus":{
+                    update(el,binding){
+                        /*console.log(el);
+                        console.log(binding);*/
+                        if(binding.value){
+                            el.focus();
+                        }
+                    }
                 }
             }
         })
+
+        function watchHashChange(){
+            var hash = window.location.hash.slice(1);
+            vm.visibility = hash;
+        }
+
+        watchHashChange();
+
+        window.addEventListener("hashchange",watchHashChange);
 
     </script>
 </body>

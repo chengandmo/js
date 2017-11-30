@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7964a6dd-25ba-4771-9c64-3b2c29a503f9" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/folder-tree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/select_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/select_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/css/fontFace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/js/vue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/todos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/js/vue.js" afterPath="$PROJECT_DIR$/vue/js/vue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/todos.html" afterPath="$PROJECT_DIR$/vue/todos.html" />
     </list>
     <ignored path="js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,9 +29,24 @@
       <file leaf-file-name="todos.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/todos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="472">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+              <folding>
+                <element signature="e#3308#3642#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/js/vue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="6115" column="23" selection-start-line="6115" selection-start-column="23" selection-end-line="6115" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1512004856297" expanded="true" signature="211407:211416" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,6 +74,7 @@
         <option value="$PROJECT_DIR$/Math/圆的碰撞.html" />
         <option value="$PROJECT_DIR$/algorithm/A-star寻路.html" />
         <option value="$PROJECT_DIR$/vue/index.html" />
+        <option value="$PROJECT_DIR$/vue/js/vue.js" />
         <option value="$PROJECT_DIR$/vue/todos.html" />
       </list>
     </option>
@@ -193,7 +199,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -310,7 +316,7 @@
       <workItem from="1510889913485" duration="1336000" />
       <workItem from="1511140272683" duration="43000" />
       <workItem from="1511142071043" duration="587000" />
-      <workItem from="1511922444220" duration="7862000" />
+      <workItem from="1511922444220" duration="18388000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1511922975597</created>
@@ -323,7 +329,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28742000" />
+    <option name="totallyTimeSpent" value="39268000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,7 +341,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="733" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16441621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -345,7 +351,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29305136" sideWeight="0.49722" order="2" side_tool="false" content_ui="tabs" x="10" y="301" width="1259" height="173" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3247734" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32326284" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39593115" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -513,19 +519,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/js/vue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="362">
+          <caret line="6115" column="23" selection-start-line="6115" selection-start-column="23" selection-end-line="6115" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1512004856297" expanded="true" signature="211407:211416" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="472">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+          <folding>
+            <element signature="e#3308#3642#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
